@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://urwh6dhwm4wh"]
+[gd_scene load_steps=66 format=3 uid="uid://urwh6dhwm4wh"]
 
 [ext_resource type="Texture2D" uid="uid://dcw88qy6f2a8o" path="res://art/main/temp_machine/main_bg.png" id="1_0wfyh"]
 [ext_resource type="Script" uid="uid://bggyppgq6bk2i" path="res://scenes/main.gd" id="1_vxglm"]
@@ -14,31 +14,40 @@
 [ext_resource type="Texture2D" uid="uid://uwumxnwikfrl" path="res://art/intro/wr_gumballs/yellow_gumball.png" id="7_2f3dj"]
 [ext_resource type="Texture2D" uid="uid://c3nt7o0nm5f7e" path="res://art/intro/wr_title_circles/red_circle.png" id="7_og1vs"]
 [ext_resource type="Texture2D" uid="uid://caqe0u8q7n7ei" path="res://art/intro/wr_title_circles/white_circle.png" id="8_2wyq8"]
+[ext_resource type="Texture2D" uid="uid://g552v84nhdc0" path="res://art/main_scene_art/main_bowl_colors/blue_bowl.png" id="8_vc5cj"]
+[ext_resource type="Texture2D" uid="uid://ujn23l7ptko0" path="res://art/main_scene_art/blue_front.png" id="9_j8jky"]
+[ext_resource type="Texture2D" uid="uid://ckxmx25jcntbv" path="res://art/main_scene_art/main_bowl_colors/pink_bowl.png" id="9_nvyfr"]
 [ext_resource type="Texture2D" uid="uid://b1x78tgh04j6x" path="res://art/intro/wr_title_circles/yellow_circle.png" id="9_vxglm"]
 [ext_resource type="Texture2D" uid="uid://c3y8qk02502qb" path="res://art/intro/wr_dial/blue_dial.png" id="10_2f3dj"]
+[ext_resource type="Texture2D" uid="uid://dsi1pod6s545w" path="res://art/main_scene_art/pink_front.png" id="10_kmb1v"]
+[ext_resource type="Texture2D" uid="uid://b7jar6151s8u8" path="res://art/main_scene_art/main_bowl_colors/red_bowl.png" id="10_ty1g6"]
+[ext_resource type="Texture2D" uid="uid://bu4hh22xjvke0" path="res://art/main_scene_art/red_front.png" id="11_fuf3a"]
 [ext_resource type="Texture2D" uid="uid://hqpr8oyhkv5h" path="res://art/intro/wr_dial/pink_dial.png" id="11_yq6so"]
 [ext_resource type="Texture2D" uid="uid://c7mi28qfsgvti" path="res://art/intro/wr_dial/red_dial.png" id="12_fv21b"]
+[ext_resource type="Texture2D" uid="uid://cjudsmg6nsq4i" path="res://art/main_scene_art/main_bowl_colors/yellow_bowl.png" id="12_j2jfr"]
+[ext_resource type="Texture2D" uid="uid://dxpponv3agptp" path="res://art/main_scene_art/yellow_front.png" id="13_pibwh"]
 [ext_resource type="Texture2D" uid="uid://bh4m1qq0gl88p" path="res://art/intro/wr_dial/white_dial.png" id="13_tel4y"]
 [ext_resource type="Texture2D" uid="uid://b50cjijdt5y5" path="res://art/intro/wr_dial/yellow_dial.png" id="14_qkpxi"]
 [ext_resource type="Texture2D" uid="uid://h3idq6xwhbe5" path="res://art/ui_marker.png" id="15_5q0nq"]
-[ext_resource type="Script" uid="uid://fq83o0l7tdyg" path="res://scripts/intro_button.gd" id="16_dgi5k"]
+[ext_resource type="Script" uid="uid://catrbylp3ympr" path="res://scripts/dial_manager.gd" id="15_tel4y"]
 [ext_resource type="Texture2D" uid="uid://ba76ude5dsnqq" path="res://art/intro/wr_dial_shadow/blue_dial_shadow.png" id="17_j8jky"]
 [ext_resource type="Texture2D" uid="uid://b3y0foqdyy11i" path="res://art/intro/wr_dial_shadow/pink_dial_shadow.png" id="18_kmb1v"]
 [ext_resource type="Texture2D" uid="uid://vm4vp8reqyh8" path="res://art/intro/wr_dial_shadow/red_dial_shadow.png" id="19_fuf3a"]
 [ext_resource type="Texture2D" uid="uid://bwm6ruantstlu" path="res://art/intro/wr_dial_shadow/white_dial_shadow.png" id="20_pibwh"]
 [ext_resource type="Texture2D" uid="uid://y6iy1katlcn1" path="res://art/intro/wr_dial_shadow/yellow_dial_shadow.png" id="21_c6pm6"]
+[ext_resource type="Script" uid="uid://dnoi5v8cjam2b" path="res://scripts/dial_button.gd" id="21_fv21b"]
 [ext_resource type="Script" uid="uid://sga8xf7vsl63" path="res://scripts/action_button.gd" id="28_2f3dj"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_jyhfs"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_0wfyh")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+[ext_resource type="Texture2D" uid="uid://bdqd0ky7pq342" path="res://art/main/ui_arrow.png" id="29_yq6so"]
+[ext_resource type="Script" uid="uid://gfv203dd5rrd" path="res://scripts/arrow_marker.gd" id="30_fv21b"]
+[ext_resource type="Texture2D" uid="uid://djm5bu1vgb7i5" path="res://art/main_scene_art/blue_bg.png" id="33_chjal"]
+[ext_resource type="Texture2D" uid="uid://cimtgbdbdb5da" path="res://art/main_scene_art/pink_bg.png" id="34_cjqg0"]
+[ext_resource type="Texture2D" uid="uid://dywcvf60yh5tj" path="res://art/main_scene_art/red_bg.png" id="35_vchkt"]
+[ext_resource type="Texture2D" uid="uid://h6ml86qmbwir" path="res://art/main_scene_art/yellow_bg.png" id="37_txyw0"]
+[ext_resource type="Texture2D" uid="uid://csfbqqyv6wybc" path="res://art/main_scene_art/blue_floor.png" id="38_vc5cj"]
+[ext_resource type="Texture2D" uid="uid://ce44udmc37jgu" path="res://art/main_scene_art/pink_floor.png" id="39_nvyfr"]
+[ext_resource type="Texture2D" uid="uid://db4e7tcfxeh7h" path="res://art/main_scene_art/red_floor.png" id="40_ty1g6"]
+[ext_resource type="Texture2D" uid="uid://dkcpyu5vf80bp" path="res://art/main_scene_art/orange_floor.png" id="41_j2jfr"]
+[ext_resource type="Texture2D" uid="uid://ga0ffaqdjnqb" path="res://art/main_scene_art/white_floor.png" id="44_nvyfr"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_tbgi4"]
 animations = [{
@@ -55,10 +64,65 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("8_vc5cj")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_nvyfr")
+}],
+"loop": true,
+"name": &"pink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_yc10j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ty1g6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_vc5cj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_nvyfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_j2jfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yc10j")
+}],
+"loop": false,
+"name": &"play",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_ty1g6")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("3_yc10j")
 }],
 "loop": true,
-"name": &"default",
+"name": &"white",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_j2jfr")
+}],
+"loop": true,
+"name": &"yellow",
 "speed": 5.0
 }]
 
@@ -66,10 +130,65 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("9_j8jky")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_kmb1v")
+}],
+"loop": true,
+"name": &"pink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_jscy8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_fuf3a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_j8jky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_kmb1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_pibwh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jscy8")
+}],
+"loop": false,
+"name": &"play",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_fuf3a")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("4_jscy8")
 }],
 "loop": true,
-"name": &"default",
+"name": &"white",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_pibwh")
+}],
+"loop": true,
+"name": &"yellow",
 "speed": 5.0
 }]
 
@@ -93,6 +212,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("8_2wyq8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_og1vs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pm3ni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_y6deb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vxglm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2wyq8")
+}],
+"loop": true,
+"name": &"play",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("7_og1vs")
 }],
 "loop": true,
@@ -103,7 +245,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("8_2wyq8")
 }],
-"loop": true,
+"loop": false,
 "name": &"white",
 "speed": 5.0
 }, {
@@ -132,6 +274,29 @@ animations = [{
 }],
 "loop": true,
 "name": &"pink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_tel4y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_fv21b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_2f3dj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_yq6so")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_qkpxi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_tel4y")
+}],
+"loop": false,
+"name": &"play",
 "speed": 5.0
 }, {
 "frames": [{
@@ -186,6 +351,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("20_pibwh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_fuf3a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_j8jky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_kmb1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_c6pm6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_pibwh")
+}],
+"loop": false,
+"name": &"play",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("19_fuf3a")
 }],
 "loop": true,
@@ -219,18 +407,151 @@ animations = [{
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tel4y"]
 
-[node name="Main" type="Node2D" node_paths=PackedStringArray("bowl", "background", "mback", "mfront", "circles", "dial", "dial_shadow")]
+[sub_resource type="CanvasTexture" id="CanvasTexture_tel4y"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jyhfs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_chjal")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_cjqg0")
+}],
+"loop": true,
+"name": &"pink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0wfyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_vchkt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_chjal")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_cjqg0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_txyw0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_0wfyh")
+}],
+"loop": false,
+"name": &"play",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("35_vchkt")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0wfyh")
+}],
+"loop": true,
+"name": &"white",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_txyw0")
+}],
+"loop": true,
+"name": &"yellow",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bjg73"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_vc5cj")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_nvyfr")
+}],
+"loop": true,
+"name": &"pink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44_nvyfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_ty1g6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_vc5cj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_nvyfr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_j2jfr")
+}],
+"loop": false,
+"name": &"play",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("40_ty1g6")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("44_nvyfr")
+}],
+"loop": true,
+"name": &"white",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("41_j2jfr")
+}],
+"loop": true,
+"name": &"yellow",
+"speed": 5.0
+}]
+
+[node name="Main" type="Node2D" node_paths=PackedStringArray("bowl", "bowl_color", "background", "floor", "mback", "mfront", "circles", "dial", "dial_shadow", "gumballA", "gumballB", "whitescreen")]
 script = ExtResource("1_vxglm")
 bowl = NodePath("Bowl")
-background = NodePath("Background")
+bowl_color = NodePath("Bowl/MachineBowlSprite")
+background = NodePath("Camera2D/Background")
+floor = NodePath("Camera2D/Background/Floor")
 mback = NodePath("MachineBack")
-mfront = NodePath("MachineFront")
-circles = NodePath("Circles")
-dial = NodePath("Circles/Dial")
-dial_shadow = NodePath("Circles/Dial/DialShadow")
-
-[node name="Background" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_jyhfs")
+mfront = NodePath("MachineBody/MachineFront")
+circles = NodePath("DialManager/Circles")
+dial = NodePath("DialManager/Circles/Dial")
+dial_shadow = NodePath("DialManager/Circles/Dial/DialShadow")
+gumballA = NodePath("MachineBody/GumballA")
+gumballB = NodePath("MachineBody/GumballB")
+whitescreen = NodePath("White")
 
 [node name="MachineBack" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_tbgi4")
@@ -239,9 +560,8 @@ sprite_frames = SubResource("SpriteFrames_tbgi4")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bowl"]
 position = Vector2(131, -648)
-polygon = PackedVector2Array(-138.93182, 240.05357, -344.93182, 214.05357, -534.9318, -53.946423, -520.9318, -203.94643, -442, -382, -311, -501, -178, -540, -255, -506, -439, -333, -504, -165, -477, -8, -337, 170, -152, 189, 95, 154, 215, -10, 246, -177, 200, -323, 100, -444, -95, -547, 79, -487, 210, -368, 268, -208, 257.06818, -20.946423, 243.06818, 31.053577, 138, 184)
-one_way_collision = true
-one_way_collision_margin = 0.0
+polygon = PackedVector2Array(-134, 311, -419, 264, -650, -80, -566, -326, -557, -534, -250, -658, -171, -524, -248, -476, -439, -333, -486, -166, -465, -18, -339, 165, -152, 189, 86, 149, 196, -18, 216, -179, 171, -328, 87, -432, -156, -553, -8, -651, 329, -494, 402, -177, 371, 49, 309, 164, 153, 237)
+one_way_collision_margin = 128.0
 
 [node name="GumballsBackground" type="Node2D" parent="Bowl"]
 
@@ -251,7 +571,7 @@ scale = Vector2(0.45, 0.45)
 texture = ExtResource("5_2wyq8")
 
 [node name="GBBackground12" type="Sprite2D" parent="Bowl/GumballsBackground"]
-position = Vector2(-71, -560)
+position = Vector2(-46, -520)
 scale = Vector2(0.45, 0.45)
 texture = ExtResource("7_2f3dj")
 
@@ -276,12 +596,12 @@ scale = Vector2(0.45, 0.45)
 texture = ExtResource("4_pm3ni")
 
 [node name="GBBackground5" type="Sprite2D" parent="Bowl/GumballsBackground"]
-position = Vector2(-18, -470)
+position = Vector2(-18, -428)
 scale = Vector2(0.45, 0.45)
 texture = ExtResource("5_2wyq8")
 
 [node name="GBBackground2" type="Sprite2D" parent="Bowl/GumballsBackground"]
-position = Vector2(-84, -473)
+position = Vector2(-109, -443.00003)
 scale = Vector2(0.45, 0.45)
 texture = ExtResource("6_vxglm")
 
@@ -296,12 +616,12 @@ scale = Vector2(0.45, 0.45)
 texture = ExtResource("6_vxglm")
 
 [node name="GBBackground3" type="Sprite2D" parent="Bowl/GumballsBackground"]
-position = Vector2(43, -475)
+position = Vector2(51, -441.00003)
 scale = Vector2(0.45, 0.45)
 texture = ExtResource("4_pm3ni")
 
 [node name="GBBackground7" type="Sprite2D" parent="Bowl/GumballsBackground"]
-position = Vector2(233, -506.00003)
+position = Vector2(205.00002, -503.00003)
 scale = Vector2(0.45, 0.45)
 texture = ExtResource("4_pm3ni")
 
@@ -485,7 +805,7 @@ position = Vector2(188, 421)
 sprite = ExtResource("6_vxglm")
 
 [node name="Gumball15" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
-position = Vector2(261, 16)
+position = Vector2(-4, 18)
 sprite = ExtResource("5_2wyq8")
 
 [node name="Gumball16" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
@@ -494,23 +814,55 @@ sprite = ExtResource("4_pm3ni")
 
 [node name="MachineBowlSprite" type="AnimatedSprite2D" parent="Bowl"]
 sprite_frames = SubResource("SpriteFrames_5he1u")
+animation = &"play"
 
-[node name="MachineFront" type="AnimatedSprite2D" parent="."]
+[node name="MachineBody" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MachineBody"]
+position = Vector2(-1, 730)
+polygon = PackedVector2Array(-158, -519, -90, -149, -102, 34, -104, 111, -47, 144, 29, 143, 96, 121, 99, 31, 99, -107, 120, -156, 186, -535, 116, 184, -52, 196, -166, 97)
+
+[node name="MachineFront" type="AnimatedSprite2D" parent="MachineBody"]
 sprite_frames = SubResource("SpriteFrames_5poiv")
+animation = &"white"
 
-[node name="Circles" type="AnimatedSprite2D" parent="."]
+[node name="GumballA" parent="MachineBody" instance=ExtResource("3_jscy8")]
+z_index = -1
+position = Vector2(-20, 620)
+freeze = true
+sprite = ExtResource("4_pm3ni")
+
+[node name="GumballB" parent="MachineBody" instance=ExtResource("3_jscy8")]
+z_index = -1
+position = Vector2(23, 430)
+freeze = true
+sprite = ExtResource("4_pm3ni")
+
+[node name="DialManager" type="Node2D" parent="." node_paths=PackedStringArray("dial", "dial_shadow", "circles", "bowl_color", "mfront", "floor", "background", "marker", "camera")]
+script = ExtResource("15_tel4y")
+dial = NodePath("Circles/Dial")
+dial_shadow = NodePath("Circles/Dial/DialShadow")
+circles = NodePath("Circles")
+bowl_color = NodePath("../Bowl/MachineBowlSprite")
+mfront = NodePath("../MachineBody/MachineFront")
+floor = NodePath("../Camera2D/Background/Floor")
+background = NodePath("../Camera2D/Background")
+marker = NodePath("Circles/Dial/Marker")
+camera = NodePath("../Camera2D")
+
+[node name="Circles" type="AnimatedSprite2D" parent="DialManager"]
 position = Vector2(25, 0)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_2cjbq")
 animation = &"white"
 
-[node name="Dial" type="AnimatedSprite2D" parent="Circles"]
+[node name="Dial" type="AnimatedSprite2D" parent="DialManager/Circles"]
 position = Vector2(-24, -179)
 sprite_frames = SubResource("SpriteFrames_chjal")
 animation = &"white"
 offset = Vector2(24, 179)
 
-[node name="Marker" type="Button" parent="Circles/Dial"]
+[node name="Marker" type="Button" parent="DialManager/Circles/Dial"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -528,18 +880,16 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_vchkt")
 theme_override_styles/hover = SubResource("StyleBoxTexture_txyw0")
 icon_alignment = 1
 expand_icon = true
-script = ExtResource("16_dgi5k")
+script = ExtResource("21_fv21b")
 
-[node name="DialShadow" type="AnimatedSprite2D" parent="Circles/Dial"]
+[node name="DialShadow" type="AnimatedSprite2D" parent="DialManager/Circles/Dial"]
 show_behind_parent = true
 position = Vector2(23, 175)
 sprite_frames = SubResource("SpriteFrames_vc5cj")
-animation = &"white"
+animation = &"play"
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(0, -944)
-
-[node name="ActionMarker" type="Button" parent="."]
+[node name="ActionMarkerRight" type="Button" parent="."]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -559,7 +909,110 @@ theme_override_styles/disabled = SubResource("StyleBoxEmpty_fv21b")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_tel4y")
 script = ExtResource("28_2f3dj")
 
-[connection signal="mouse_entered" from="Circles/Dial/Marker" to="Circles/Dial/Marker" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Circles/Dial/Marker" to="Circles/Dial/Marker" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="ActionMarker" to="ActionMarker" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="ActionMarker" to="ActionMarker" method="_on_mouse_exited"]
+[node name="ActionMarkerLeft" type="Button" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -780.0
+offset_top = -900.0
+offset_right = -509.0
+offset_bottom = -651.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(134, 122)
+theme_override_icons/icon = ExtResource("15_5q0nq")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vxglm")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2f3dj")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yq6so")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_fv21b")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tel4y")
+script = ExtResource("28_2f3dj")
+
+[node name="ActionMarkerTop" type="Button" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -134.0
+offset_top = -1640.0
+offset_right = 137.0
+offset_bottom = -1391.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(134, 122)
+theme_override_icons/icon = ExtResource("15_5q0nq")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vxglm")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2f3dj")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yq6so")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_fv21b")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tel4y")
+script = ExtResource("28_2f3dj")
+
+[node name="White" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1971.0
+offset_top = -297.0
+offset_right = 290.5
+offset_bottom = 1004.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.79, 1.79)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+texture = SubResource("CanvasTexture_tel4y")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -944)
+
+[node name="Background" type="AnimatedSprite2D" parent="Camera2D"]
+z_index = -2
+position = Vector2(0, 944)
+sprite_frames = SubResource("SpriteFrames_jyhfs")
+animation = &"play"
+
+[node name="Floor" type="AnimatedSprite2D" parent="Camera2D/Background"]
+sprite_frames = SubResource("SpriteFrames_bjg73")
+animation = &"play"
+
+[node name="ArrowMarker" type="Button" parent="Camera2D"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -110.0
+offset_top = 308.0
+offset_right = 111.0
+offset_bottom = 546.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(108, 135)
+theme_override_icons/icon = ExtResource("29_yq6so")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vxglm")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2f3dj")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yq6so")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_fv21b")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tel4y")
+script = ExtResource("30_fv21b")
+
+[connection signal="mouse_entered" from="DialManager/Circles/Dial/Marker" to="DialManager/Circles/Dial/Marker" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="DialManager/Circles/Dial/Marker" to="DialManager/Circles/Dial/Marker" method="_on_mouse_exited"]
+[connection signal="pressed" from="DialManager/Circles/Dial/Marker" to="DialManager" method="_on_marker_pressed"]
+[connection signal="mouse_entered" from="ActionMarkerRight" to="ActionMarkerRight" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ActionMarkerRight" to="ActionMarkerRight" method="_on_mouse_exited"]
+[connection signal="pressed" from="ActionMarkerRight" to="." method="_on_action_marker_right_pressed"]
+[connection signal="mouse_entered" from="ActionMarkerLeft" to="ActionMarkerLeft" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ActionMarkerLeft" to="ActionMarkerLeft" method="_on_mouse_exited"]
+[connection signal="pressed" from="ActionMarkerLeft" to="." method="_on_action_marker_left_pressed"]
+[connection signal="mouse_entered" from="ActionMarkerTop" to="ActionMarkerTop" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ActionMarkerTop" to="ActionMarkerTop" method="_on_mouse_exited"]
+[connection signal="pressed" from="ActionMarkerTop" to="." method="_on_action_marker_top_pressed"]
+[connection signal="mouse_entered" from="Camera2D/ArrowMarker" to="Camera2D/ArrowMarker" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Camera2D/ArrowMarker" to="Camera2D/ArrowMarker" method="_on_mouse_exited"]
+[connection signal="pressed" from="Camera2D/ArrowMarker" to="." method="_on_arrow_marker_pressed"]

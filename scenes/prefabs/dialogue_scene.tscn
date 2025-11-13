@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2bahlhsvkvdd"]
+
+[ext_resource type="Texture2D" uid="uid://dp0dci7beeb" path="res://art/intro/wr_title_circles/blue_circle.png" id="1_iwqmi"]
+[ext_resource type="Texture2D" uid="uid://derkaeva5omt8" path="res://art/intro/wr_title_circles/pink_circle.png" id="2_geuwm"]
+
+[node name="DialogueScene" type="Node2D"]
+
+[node name="CircleA" type="Sprite2D" parent="."]
+position = Vector2(420, 520)
+texture = ExtResource("1_iwqmi")
+
+[node name="CharacterA" type="Sprite2D" parent="CircleA"]
+
+[node name="CircleB" type="Sprite2D" parent="."]
+position = Vector2(1550, 520)
+texture = ExtResource("2_geuwm")
+
+[node name="CharacterB" type="Sprite2D" parent="CircleB"]
+
+[node name="MiniA" type="Sprite2D" parent="."]
+
+[node name="MiniB" type="Sprite2D" parent="."]

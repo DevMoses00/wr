@@ -57,6 +57,7 @@ func rotation_control():
 		var tween = create_tween()
 		tween.tween_property(dial,"rotation_degrees",90,0.4).set_trans(Tween.TRANS_ELASTIC).as_relative()
 		tween.parallel().tween_property(dial_shadow, "position", Vector2(50,-15),0.4).set_trans(Tween.TRANS_ELASTIC).as_relative()
+		tween.parallel().tween_property($Camera2D,"position",Vector2(0,-25),0.3).set_trans(Tween.TRANS_ELASTIC).as_relative()
 		gumball_feedback()
 		# SoundManager.play_sfx(rotate_noise)
 		await tween.finished
@@ -90,6 +91,7 @@ func rotation_control():
 		var tween = create_tween()
 		tween.tween_property(dial,"rotation_degrees",90,0.4).set_trans(Tween.TRANS_ELASTIC).as_relative()
 		tween.parallel().tween_property(dial_shadow, "position", Vector2(-50,-15),0.4).set_trans(Tween.TRANS_ELASTIC).as_relative()
+		tween.parallel().tween_property($Camera2D,"position",Vector2(25,0),0.3).set_trans(Tween.TRANS_ELASTIC).as_relative()
 		gumball_feedback()
 		# SoundManager.play_sfx(rotate_noise)
 		await tween.finished
@@ -123,6 +125,7 @@ func rotation_control():
 		var tween = create_tween()
 		tween.tween_property(dial,"rotation_degrees",90,0.4).set_trans(Tween.TRANS_ELASTIC).as_relative()
 		tween.parallel().tween_property(dial_shadow, "position", Vector2(-50,15),0.4).set_trans(Tween.TRANS_ELASTIC).as_relative()
+		tween.parallel().tween_property($Camera2D,"position",Vector2(0,25),0.3).set_trans(Tween.TRANS_ELASTIC).as_relative()
 		gumball_feedback()
 		# SoundManager.play_sfx(rotate_noise)
 		await tween.finished
@@ -156,6 +159,7 @@ func rotation_control():
 		var tween = create_tween()
 		tween.tween_property(dial,"rotation_degrees",90,0.4).set_trans(Tween.TRANS_ELASTIC).as_relative()
 		tween.parallel().tween_property(dial_shadow, "position", Vector2(50,15),0.4).set_trans(Tween.TRANS_ELASTIC).as_relative()
+		tween.parallel().tween_property($Camera2D,"position",Vector2(-25,0),0.3).set_trans(Tween.TRANS_ELASTIC).as_relative()
 		gumball_feedback()
 		# SoundManager.play_sfx(rotate_noise)
 		await tween.finished

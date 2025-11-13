@@ -6,14 +6,16 @@
 radius = 134.00374
 
 [node name="Gumball" type="RigidBody2D"]
-gravity_scale = 0.922
+mass = 0.716
+gravity_scale = 6.13
+angular_velocity = 2.2972023
 script = ExtResource("1_4ani7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-6, -45)
-scale = Vector2(0.5, 0.5)
+position = Vector2(-6, -49)
+scale = Vector2(0.44, 0.44)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-11, -86)
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.45, 0.45)
 shape = SubResource("CircleShape2D_4ani7")

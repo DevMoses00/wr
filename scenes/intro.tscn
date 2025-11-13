@@ -31,49 +31,6 @@
 [ext_resource type="Script" uid="uid://fq83o0l7tdyg" path="res://scripts/intro_button.gd" id="22_t5vr6"]
 [ext_resource type="FontFile" uid="uid://1mphpn05rbh7" path="res://fonts/SourGummy-VariableFont_wdth,wght.ttf" id="23_kh17o"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_dryi7"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_272cy")
-}],
-"loop": true,
-"name": &"blue",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_37iue")
-}],
-"loop": true,
-"name": &"pink",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_n6p8m")
-}],
-"loop": true,
-"name": &"red",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_m3r7s")
-}],
-"loop": true,
-"name": &"white",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_xwriy")
-}],
-"loop": true,
-"name": &"yellow",
-"speed": 5.0
-}]
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_5pmge"]
 animations = [{
 "frames": [{
@@ -258,9 +215,52 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_dryi7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_272cy")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_37iue")
+}],
+"loop": true,
+"name": &"pink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_n6p8m")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_m3r7s")
+}],
+"loop": true,
+"name": &"white",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_xwriy")
+}],
+"loop": true,
+"name": &"yellow",
+"speed": 5.0
+}]
+
 [node name="Intro" type="Node2D" node_paths=PackedStringArray("background", "circles", "dial", "dial_shadow", "title", "marker", "gumball1", "g1shadow", "gumball2", "g2shadow", "gumball3", "g3shadow", "gumball4", "g4shadow")]
 script = ExtResource("1_4vp3x")
-background = NodePath("Background")
+background = NodePath("Camera2D/Background")
 circles = NodePath("Circles")
 dial = NodePath("Dial")
 dial_shadow = NodePath("Dial/DialShadow")
@@ -274,10 +274,6 @@ gumball3 = NodePath("Gumballs/Gumball3")
 g3shadow = NodePath("Gumballs/Shadow3")
 gumball4 = NodePath("Gumballs/Gumball4")
 g4shadow = NodePath("Gumballs/Shadow4")
-
-[node name="Background" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_dryi7")
-animation = &"white"
 
 [node name="Circles" type="AnimatedSprite2D" parent="."]
 position = Vector2(25, 0)
@@ -396,6 +392,11 @@ sprite_frames = ExtResource("22_kh17o")
 animation = &"pink"
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Background" type="AnimatedSprite2D" parent="Camera2D"]
+z_index = -1
+sprite_frames = SubResource("SpriteFrames_dryi7")
+animation = &"white"
 
 [connection signal="pressed" from="start" to="." method="_on_button_pressed"]
 [connection signal="mouse_entered" from="Dial/Marker" to="Dial/Marker" method="_on_mouse_entered"]
