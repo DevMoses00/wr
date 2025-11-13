@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqbfk6krfrske"]
+
+[ext_resource type="Script" uid="uid://bycbgw0l561cu" path="res://scripts/gumball.gd" id="1_4ani7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4ani7"]
+radius = 134.00374
+
+[node name="Gumball" type="RigidBody2D"]
+gravity_scale = 0.922
+script = ExtResource("1_4ani7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-6, -45)
+scale = Vector2(0.5, 0.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-11, -86)
+scale = Vector2(0.5, 0.5)
+shape = SubResource("CircleShape2D_4ani7")

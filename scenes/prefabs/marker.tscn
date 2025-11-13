@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://8737rh754rs2"]
+
+[ext_resource type="Texture2D" uid="uid://h3idq6xwhbe5" path="res://art/ui_marker.png" id="1_iimlb"]
+[ext_resource type="Script" uid="uid://fq83o0l7tdyg" path="res://scripts/intro_button.gd" id="2_hx73l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t5vr6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_urird"]
+content_margin_top = 2048.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4vp3x"]
+
+[node name="Marker" type="Button" node_paths=PackedStringArray("gumball1", "g1shadow", "gumball2", "g2shadow", "gumball3", "g3shadow", "gumball4", "g4shadow")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 56.0
+offset_top = -120.0
+offset_right = -1614.0
+offset_bottom = -950.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(132, 122)
+theme_override_icons/icon = ExtResource("1_iimlb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_t5vr6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_urird")
+theme_override_styles/hover = SubResource("StyleBoxTexture_4vp3x")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("2_hx73l")
+gumball1 = NodePath("")
+g1shadow = NodePath("")
+gumball2 = NodePath("")
+g2shadow = NodePath("")
+gumball3 = NodePath("")
+g3shadow = NodePath("")
+gumball4 = NodePath("")
+g4shadow = NodePath("")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

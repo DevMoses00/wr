@@ -1,0 +1,403 @@
+[gd_scene load_steps=45 format=3 uid="uid://1jmuja77splo"]
+
+[ext_resource type="Script" uid="uid://c1mhfi7k0bpys" path="res://scripts/intro.gd" id="1_4vp3x"]
+[ext_resource type="Texture2D" uid="uid://dluvywuxyy60m" path="res://art/intro/wr_bgs/bg_blue.png" id="1_272cy"]
+[ext_resource type="Texture2D" uid="uid://rxi3ihtsw725" path="res://art/intro/wr_bgs/bg_pink.png" id="2_37iue"]
+[ext_resource type="Texture2D" uid="uid://7iqhdh5h3ixm" path="res://art/intro/wr_bgs/bg_red.png" id="3_n6p8m"]
+[ext_resource type="Texture2D" uid="uid://b8vkn2ymhrga" path="res://art/intro/wr_bgs/bg_white.png" id="4_m3r7s"]
+[ext_resource type="Texture2D" uid="uid://dssmya7hlwbaa" path="res://art/intro/wr_bgs/bg_yellow.png" id="5_xwriy"]
+[ext_resource type="Texture2D" uid="uid://dp0dci7beeb" path="res://art/intro/wr_title_circles/blue_circle.png" id="6_u5myo"]
+[ext_resource type="Texture2D" uid="uid://derkaeva5omt8" path="res://art/intro/wr_title_circles/pink_circle.png" id="7_u05oh"]
+[ext_resource type="Texture2D" uid="uid://c3nt7o0nm5f7e" path="res://art/intro/wr_title_circles/red_circle.png" id="8_epycs"]
+[ext_resource type="Texture2D" uid="uid://caqe0u8q7n7ei" path="res://art/intro/wr_title_circles/white_circle.png" id="9_ge50m"]
+[ext_resource type="Texture2D" uid="uid://b1x78tgh04j6x" path="res://art/intro/wr_title_circles/yellow_circle.png" id="10_17bgi"]
+[ext_resource type="Texture2D" uid="uid://c3y8qk02502qb" path="res://art/intro/wr_dial/blue_dial.png" id="11_urird"]
+[ext_resource type="Texture2D" uid="uid://bsbn8yuxhp5om" path="res://art/intro/wr_titles/blue_title.png" id="12_h7rjp"]
+[ext_resource type="Texture2D" uid="uid://hqpr8oyhkv5h" path="res://art/intro/wr_dial/pink_dial.png" id="12_t5vr6"]
+[ext_resource type="Texture2D" uid="uid://c7mi28qfsgvti" path="res://art/intro/wr_dial/red_dial.png" id="13_4vp3x"]
+[ext_resource type="Texture2D" uid="uid://dcth6t41e4f6s" path="res://art/intro/wr_titles/pink_title.png" id="13_6ac85"]
+[ext_resource type="Texture2D" uid="uid://bief6vdnk25fa" path="res://art/intro/wr_titles/red_title.png" id="14_lm4bj"]
+[ext_resource type="Texture2D" uid="uid://bh4m1qq0gl88p" path="res://art/intro/wr_dial/white_dial.png" id="14_sg54v"]
+[ext_resource type="Texture2D" uid="uid://b5w2atiko1mp" path="res://art/intro/wr_titles/yellow_title.png" id="15_x2gsc"]
+[ext_resource type="Texture2D" uid="uid://b50cjijdt5y5" path="res://art/intro/wr_dial/yellow_dial.png" id="15_yj5im"]
+[ext_resource type="Texture2D" uid="uid://ba76ude5dsnqq" path="res://art/intro/wr_dial_shadow/blue_dial_shadow.png" id="16_h7rjp"]
+[ext_resource type="Texture2D" uid="uid://b3y0foqdyy11i" path="res://art/intro/wr_dial_shadow/pink_dial_shadow.png" id="17_6ac85"]
+[ext_resource type="Texture2D" uid="uid://vm4vp8reqyh8" path="res://art/intro/wr_dial_shadow/red_dial_shadow.png" id="18_lm4bj"]
+[ext_resource type="Texture2D" uid="uid://bwm6ruantstlu" path="res://art/intro/wr_dial_shadow/white_dial_shadow.png" id="19_x2gsc"]
+[ext_resource type="Texture2D" uid="uid://y6iy1katlcn1" path="res://art/intro/wr_dial_shadow/yellow_dial_shadow.png" id="20_366e5"]
+[ext_resource type="SpriteFrames" uid="uid://bgbcvgqq2ny4r" path="res://resources/gumball.tres" id="21_hai50"]
+[ext_resource type="Texture2D" uid="uid://h3idq6xwhbe5" path="res://art/ui_marker.png" id="21_urird"]
+[ext_resource type="SpriteFrames" uid="uid://xv8taptyd158" path="res://resources/gumball_shadow.tres" id="22_kh17o"]
+[ext_resource type="Script" uid="uid://fq83o0l7tdyg" path="res://scripts/intro_button.gd" id="22_t5vr6"]
+[ext_resource type="FontFile" uid="uid://1mphpn05rbh7" path="res://fonts/SourGummy-VariableFont_wdth,wght.ttf" id="23_kh17o"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dryi7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_272cy")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_37iue")
+}],
+"loop": true,
+"name": &"pink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_n6p8m")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_m3r7s")
+}],
+"loop": true,
+"name": &"white",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_xwriy")
+}],
+"loop": true,
+"name": &"yellow",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5pmge"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_u5myo")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_u05oh")
+}],
+"loop": true,
+"name": &"pink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_epycs")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_ge50m")
+}],
+"loop": true,
+"name": &"white",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_17bgi")
+}],
+"loop": true,
+"name": &"yellow",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_366e5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_h7rjp")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_6ac85")
+}],
+"loop": true,
+"name": &"pink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_lm4bj")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_x2gsc")
+}],
+"loop": true,
+"name": &"yellow",
+"speed": 5.0
+}]
+
+[sub_resource type="FontVariation" id="FontVariation_6ac85"]
+base_font = ExtResource("23_kh17o")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lm4bj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x2gsc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ac85"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_38pnl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y6kq6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7kkmp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_urird")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_t5vr6")
+}],
+"loop": true,
+"name": &"pink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_4vp3x")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_sg54v")
+}],
+"loop": true,
+"name": &"white",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_yj5im")
+}],
+"loop": true,
+"name": &"yellow",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t5vr6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_urird"]
+content_margin_top = 2048.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4vp3x"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_127wd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_h7rjp")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_6ac85")
+}],
+"loop": true,
+"name": &"pink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_lm4bj")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_x2gsc")
+}],
+"loop": true,
+"name": &"white",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_366e5")
+}],
+"loop": true,
+"name": &"yellow",
+"speed": 5.0
+}]
+
+[node name="Intro" type="Node2D" node_paths=PackedStringArray("background", "circles", "dial", "dial_shadow", "title", "marker", "gumball1", "g1shadow", "gumball2", "g2shadow", "gumball3", "g3shadow", "gumball4", "g4shadow")]
+script = ExtResource("1_4vp3x")
+background = NodePath("Background")
+circles = NodePath("Circles")
+dial = NodePath("Dial")
+dial_shadow = NodePath("Dial/DialShadow")
+title = NodePath("Title")
+marker = NodePath("Dial/Marker")
+gumball1 = NodePath("Gumballs/Gumball1")
+g1shadow = NodePath("Gumballs/Shadow1")
+gumball2 = NodePath("Gumballs/Gumball2")
+g2shadow = NodePath("Gumballs/Shadow2")
+gumball3 = NodePath("Gumballs/Gumball3")
+g3shadow = NodePath("Gumballs/Shadow3")
+gumball4 = NodePath("Gumballs/Gumball4")
+g4shadow = NodePath("Gumballs/Shadow4")
+
+[node name="Background" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_dryi7")
+animation = &"white"
+
+[node name="Circles" type="AnimatedSprite2D" parent="."]
+position = Vector2(25, 0)
+sprite_frames = SubResource("SpriteFrames_5pmge")
+animation = &"white"
+
+[node name="Title" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(24, -32)
+sprite_frames = SubResource("SpriteFrames_366e5")
+animation = &"blue"
+
+[node name="start" type="Button" parent="."]
+visible = false
+offset_left = -184.0
+offset_top = -48.0
+offset_right = 180.0
+offset_bottom = 137.0
+theme_override_fonts/font = SubResource("FontVariation_6ac85")
+theme_override_font_sizes/font_size = 125
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lm4bj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_x2gsc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6ac85")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_38pnl")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y6kq6")
+text = "Start"
+
+[node name="Dial" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -179)
+sprite_frames = SubResource("SpriteFrames_7kkmp")
+animation = &"white"
+offset = Vector2(24, 179)
+
+[node name="Marker" type="Button" parent="Dial" node_paths=PackedStringArray("gumball1", "g1shadow", "gumball2", "g2shadow", "gumball3", "g3shadow", "gumball4", "g4shadow")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 56.0
+offset_top = -120.0
+offset_right = -1614.0
+offset_bottom = -950.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(132, 122)
+theme_override_icons/icon = ExtResource("21_urird")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_t5vr6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_urird")
+theme_override_styles/hover = SubResource("StyleBoxTexture_4vp3x")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("22_t5vr6")
+gumball1 = NodePath("../../Gumballs/Gumball1")
+g1shadow = NodePath("../../Gumballs/Shadow1")
+gumball2 = NodePath("../../Gumballs/Gumball2")
+g2shadow = NodePath("../../Gumballs/Shadow2")
+gumball3 = NodePath("../../Gumballs/Gumball3")
+g3shadow = NodePath("../../Gumballs/Shadow3")
+gumball4 = NodePath("../../Gumballs/Gumball4")
+g4shadow = NodePath("../../Gumballs/Shadow4")
+
+[node name="DialShadow" type="AnimatedSprite2D" parent="Dial"]
+show_behind_parent = true
+position = Vector2(23, 175)
+sprite_frames = SubResource("SpriteFrames_127wd")
+animation = &"white"
+
+[node name="Gumballs" type="Node2D" parent="."]
+
+[node name="Gumball1" type="AnimatedSprite2D" parent="Gumballs"]
+position = Vector2(-708, 309)
+sprite_frames = ExtResource("21_hai50")
+animation = &"yellow"
+offset = Vector2(9, 84)
+
+[node name="Shadow1" type="AnimatedSprite2D" parent="Gumballs"]
+show_behind_parent = true
+position = Vector2(-780, 367)
+sprite_frames = ExtResource("22_kh17o")
+animation = &"yellow"
+
+[node name="Gumball2" type="AnimatedSprite2D" parent="Gumballs"]
+position = Vector2(-242, 307)
+sprite_frames = ExtResource("21_hai50")
+animation = &"red"
+offset = Vector2(11, 84)
+
+[node name="Shadow2" type="AnimatedSprite2D" parent="Gumballs"]
+show_behind_parent = true
+position = Vector2(-264, 387)
+sprite_frames = ExtResource("22_kh17o")
+animation = &"red"
+
+[node name="Gumball3" type="AnimatedSprite2D" parent="Gumballs"]
+position = Vector2(270, 303)
+sprite_frames = ExtResource("21_hai50")
+animation = &"blue"
+offset = Vector2(8, 86)
+
+[node name="Shadow3" type="AnimatedSprite2D" parent="Gumballs"]
+show_behind_parent = true
+position = Vector2(275, 383)
+sprite_frames = ExtResource("22_kh17o")
+animation = &"blue"
+
+[node name="Gumball4" type="AnimatedSprite2D" parent="Gumballs"]
+position = Vector2(710, 309)
+sprite_frames = ExtResource("21_hai50")
+animation = &"pink"
+offset = Vector2(9, 85)
+
+[node name="Shadow4" type="AnimatedSprite2D" parent="Gumballs"]
+show_behind_parent = true
+position = Vector2(754, 370)
+sprite_frames = ExtResource("22_kh17o")
+animation = &"pink"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="pressed" from="start" to="." method="_on_button_pressed"]
+[connection signal="mouse_entered" from="Dial/Marker" to="Dial/Marker" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Dial/Marker" to="Dial/Marker" method="_on_mouse_exited"]
+[connection signal="pressed" from="Dial/Marker" to="." method="_on_marker_pressed"]

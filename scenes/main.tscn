@@ -1,5 +1,565 @@
-[gd_scene format=3 uid="uid://urwh6dhwm4wh"]
+[gd_scene load_steps=44 format=3 uid="uid://urwh6dhwm4wh"]
 
-[node name="Main" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://dcw88qy6f2a8o" path="res://art/main/temp_machine/main_bg.png" id="1_0wfyh"]
+[ext_resource type="Script" uid="uid://bggyppgq6bk2i" path="res://scenes/main.gd" id="1_vxglm"]
+[ext_resource type="Texture2D" uid="uid://bo1aj14c6e73m" path="res://art/main/temp_machine/machine_back.png" id="2_sugp2"]
+[ext_resource type="PackedScene" uid="uid://cqbfk6krfrske" path="res://scenes/prefabs/gumball.tscn" id="3_jscy8"]
+[ext_resource type="Texture2D" uid="uid://c1uja1v8gdyxe" path="res://art/main/temp_machine/machine_bowl.png" id="3_yc10j"]
+[ext_resource type="Texture2D" uid="uid://kv60k71b6kl7" path="res://art/main/temp_machine/machine_front.png" id="4_jscy8"]
+[ext_resource type="Texture2D" uid="uid://dtteks8l3vy11" path="res://art/intro/wr_gumballs/red_gumball.png" id="4_pm3ni"]
+[ext_resource type="Texture2D" uid="uid://cta5a3036jamj" path="res://art/intro/wr_gumballs/blue_gumball.png" id="5_2wyq8"]
+[ext_resource type="Texture2D" uid="uid://dp0dci7beeb" path="res://art/intro/wr_title_circles/blue_circle.png" id="5_pm3ni"]
+[ext_resource type="Texture2D" uid="uid://bqy8ulm0g7l0u" path="res://art/intro/wr_gumballs/pink_gumball.png" id="6_vxglm"]
+[ext_resource type="Texture2D" uid="uid://derkaeva5omt8" path="res://art/intro/wr_title_circles/pink_circle.png" id="6_y6deb"]
+[ext_resource type="Texture2D" uid="uid://uwumxnwikfrl" path="res://art/intro/wr_gumballs/yellow_gumball.png" id="7_2f3dj"]
+[ext_resource type="Texture2D" uid="uid://c3nt7o0nm5f7e" path="res://art/intro/wr_title_circles/red_circle.png" id="7_og1vs"]
+[ext_resource type="Texture2D" uid="uid://caqe0u8q7n7ei" path="res://art/intro/wr_title_circles/white_circle.png" id="8_2wyq8"]
+[ext_resource type="Texture2D" uid="uid://b1x78tgh04j6x" path="res://art/intro/wr_title_circles/yellow_circle.png" id="9_vxglm"]
+[ext_resource type="Texture2D" uid="uid://c3y8qk02502qb" path="res://art/intro/wr_dial/blue_dial.png" id="10_2f3dj"]
+[ext_resource type="Texture2D" uid="uid://hqpr8oyhkv5h" path="res://art/intro/wr_dial/pink_dial.png" id="11_yq6so"]
+[ext_resource type="Texture2D" uid="uid://c7mi28qfsgvti" path="res://art/intro/wr_dial/red_dial.png" id="12_fv21b"]
+[ext_resource type="Texture2D" uid="uid://bh4m1qq0gl88p" path="res://art/intro/wr_dial/white_dial.png" id="13_tel4y"]
+[ext_resource type="Texture2D" uid="uid://b50cjijdt5y5" path="res://art/intro/wr_dial/yellow_dial.png" id="14_qkpxi"]
+[ext_resource type="Texture2D" uid="uid://h3idq6xwhbe5" path="res://art/ui_marker.png" id="15_5q0nq"]
+[ext_resource type="Script" uid="uid://fq83o0l7tdyg" path="res://scripts/intro_button.gd" id="16_dgi5k"]
+[ext_resource type="Texture2D" uid="uid://ba76ude5dsnqq" path="res://art/intro/wr_dial_shadow/blue_dial_shadow.png" id="17_j8jky"]
+[ext_resource type="Texture2D" uid="uid://b3y0foqdyy11i" path="res://art/intro/wr_dial_shadow/pink_dial_shadow.png" id="18_kmb1v"]
+[ext_resource type="Texture2D" uid="uid://vm4vp8reqyh8" path="res://art/intro/wr_dial_shadow/red_dial_shadow.png" id="19_fuf3a"]
+[ext_resource type="Texture2D" uid="uid://bwm6ruantstlu" path="res://art/intro/wr_dial_shadow/white_dial_shadow.png" id="20_pibwh"]
+[ext_resource type="Texture2D" uid="uid://y6iy1katlcn1" path="res://art/intro/wr_dial_shadow/yellow_dial_shadow.png" id="21_c6pm6"]
+[ext_resource type="Script" uid="uid://sga8xf7vsl63" path="res://scripts/action_button.gd" id="28_2f3dj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jyhfs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0wfyh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tbgi4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_sugp2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5he1u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_yc10j")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5poiv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_jscy8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2cjbq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_pm3ni")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_y6deb")
+}],
+"loop": true,
+"name": &"pink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_og1vs")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_2wyq8")
+}],
+"loop": true,
+"name": &"white",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_vxglm")
+}],
+"loop": true,
+"name": &"yellow",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_chjal"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_2f3dj")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_yq6so")
+}],
+"loop": true,
+"name": &"pink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_fv21b")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_tel4y")
+}],
+"loop": true,
+"name": &"white",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_qkpxi")
+}],
+"loop": true,
+"name": &"yellow",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cjqg0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vchkt"]
+content_margin_top = 2048.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_txyw0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vc5cj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_j8jky")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_kmb1v")
+}],
+"loop": true,
+"name": &"pink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_fuf3a")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_pibwh")
+}],
+"loop": true,
+"name": &"white",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_c6pm6")
+}],
+"loop": true,
+"name": &"yellow",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vxglm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2f3dj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yq6so"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fv21b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tel4y"]
+
+[node name="Main" type="Node2D" node_paths=PackedStringArray("bowl", "background", "mback", "mfront", "circles", "dial", "dial_shadow")]
+script = ExtResource("1_vxglm")
+bowl = NodePath("Bowl")
+background = NodePath("Background")
+mback = NodePath("MachineBack")
+mfront = NodePath("MachineFront")
+circles = NodePath("Circles")
+dial = NodePath("Circles/Dial")
+dial_shadow = NodePath("Circles/Dial/DialShadow")
+
+[node name="Background" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jyhfs")
+
+[node name="MachineBack" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_tbgi4")
+
+[node name="Bowl" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bowl"]
+position = Vector2(131, -648)
+polygon = PackedVector2Array(-138.93182, 240.05357, -344.93182, 214.05357, -534.9318, -53.946423, -520.9318, -203.94643, -442, -382, -311, -501, -178, -540, -255, -506, -439, -333, -504, -165, -477, -8, -337, 170, -152, 189, 95, 154, 215, -10, 246, -177, 200, -323, 100, -444, -95, -547, 79, -487, 210, -368, 268, -208, 257.06818, -20.946423, 243.06818, 31.053577, 138, 184)
+one_way_collision = true
+one_way_collision_margin = 0.0
+
+[node name="GumballsBackground" type="Node2D" parent="Bowl"]
+
+[node name="GBBackground" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-204, -496.00006)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("5_2wyq8")
+
+[node name="GBBackground12" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-71, -560)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("7_2f3dj")
+
+[node name="GBBackground13" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(171, -574)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("7_2f3dj")
+
+[node name="GBBackground9" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(85, -547)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("5_2wyq8")
+
+[node name="GBBackground11" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-175, -570)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("6_vxglm")
+
+[node name="GBBackground14" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(19.000015, -578)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("4_pm3ni")
+
+[node name="GBBackground5" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-18, -470)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("5_2wyq8")
+
+[node name="GBBackground2" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-84, -473)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("6_vxglm")
+
+[node name="GBBackground10" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(261, -562)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("6_vxglm")
+
+[node name="GBBackground6" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(125, -471.00003)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("6_vxglm")
+
+[node name="GBBackground3" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(43, -475)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("4_pm3ni")
+
+[node name="GBBackground7" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(233, -506.00003)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("4_pm3ni")
+
+[node name="GBBackground4" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(165, -496)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("7_2f3dj")
+
+[node name="GBBackground8" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-246, -541)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("7_2f3dj")
+
+[node name="GBBackground15" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-299, -641.00006)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("5_2wyq8")
+
+[node name="GBBackground16" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-166, -705)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("7_2f3dj")
+
+[node name="GBBackground17" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(300, -650)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("7_2f3dj")
+
+[node name="GBBackground18" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(15, -689)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("5_2wyq8")
+
+[node name="GBBackground19" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-250, -701)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("6_vxglm")
+
+[node name="GBBackground20" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(230.99998, -698)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("4_pm3ni")
+
+[node name="GBBackground21" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-113.00001, -648)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("5_2wyq8")
+
+[node name="GBBackground22" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-201, -625)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("6_vxglm")
+
+[node name="GBBackground23" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(166, -707)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("6_vxglm")
+
+[node name="GBBackground24" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(30, -616)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("6_vxglm")
+
+[node name="GBBackground25" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-52, -620)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("4_pm3ni")
+
+[node name="GBBackground26" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(138, -651)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("4_pm3ni")
+
+[node name="GBBackground27" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(70, -641)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("7_2f3dj")
+
+[node name="GBBackground28" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-323.00003, -717)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("7_2f3dj")
+
+[node name="GBBackground29" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-244, -807)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("5_2wyq8")
+
+[node name="GBBackground30" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-142, -757)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("6_vxglm")
+
+[node name="GBBackground31" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-323, -780)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("6_vxglm")
+
+[node name="GBBackground32" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(334, -719)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("6_vxglm")
+
+[node name="GBBackground33" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-56, -728.00006)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("4_pm3ni")
+
+[node name="GBBackground34" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(11.000015, -786)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("4_pm3ni")
+
+[node name="GBBackground35" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(100, -737)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("7_2f3dj")
+
+[node name="GBBackground36" type="Sprite2D" parent="Bowl/GumballsBackground"]
+position = Vector2(-304.00003, -828)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("7_2f3dj")
+
+[node name="GUMBALLS" type="Node2D" parent="Bowl"]
+position = Vector2(0, -892)
+
+[node name="Gumball" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
+position = Vector2(147, 38)
+sprite = ExtResource("4_pm3ni")
+
+[node name="Gumball2" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
+position = Vector2(-183, 154)
+sprite = ExtResource("5_2wyq8")
+
+[node name="Gumball3" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
+position = Vector2(-169, -18)
+sprite = ExtResource("6_vxglm")
+
+[node name="Gumball4" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
+position = Vector2(290, 135)
+sprite = ExtResource("7_2f3dj")
+
+[node name="Gumball5" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
+position = Vector2(-26, 167)
+sprite = ExtResource("5_2wyq8")
+
+[node name="Gumball6" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
+position = Vector2(99, -105)
+sprite = ExtResource("7_2f3dj")
+
+[node name="Gumball7" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
+position = Vector2(125, 237)
+sprite = ExtResource("4_pm3ni")
+
+[node name="Gumball8" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
+position = Vector2(-260, 286)
+sprite = ExtResource("6_vxglm")
+
+[node name="Gumball9" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
+position = Vector2(256, 314)
+sprite = ExtResource("7_2f3dj")
+
+[node name="Gumball10" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
+position = Vector2(-87, 312)
+sprite = ExtResource("4_pm3ni")
+
+[node name="Gumball11" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
+position = Vector2(68, 398)
+sprite = ExtResource("6_vxglm")
+
+[node name="Gumball12" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
+position = Vector2(-58, -120)
+sprite = ExtResource("5_2wyq8")
+
+[node name="Gumball13" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
+position = Vector2(-141, 438)
+sprite = ExtResource("7_2f3dj")
+
+[node name="Gumball14" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
+position = Vector2(188, 421)
+sprite = ExtResource("6_vxglm")
+
+[node name="Gumball15" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
+position = Vector2(261, 16)
+sprite = ExtResource("5_2wyq8")
+
+[node name="Gumball16" parent="Bowl/GUMBALLS" instance=ExtResource("3_jscy8")]
+position = Vector2(-284, 167)
+sprite = ExtResource("4_pm3ni")
+
+[node name="MachineBowlSprite" type="AnimatedSprite2D" parent="Bowl"]
+sprite_frames = SubResource("SpriteFrames_5he1u")
+
+[node name="MachineFront" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5poiv")
+
+[node name="Circles" type="AnimatedSprite2D" parent="."]
+position = Vector2(25, 0)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_2cjbq")
+animation = &"white"
+
+[node name="Dial" type="AnimatedSprite2D" parent="Circles"]
+position = Vector2(-24, -179)
+sprite_frames = SubResource("SpriteFrames_chjal")
+animation = &"white"
+offset = Vector2(24, 179)
+
+[node name="Marker" type="Button" parent="Circles/Dial"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 56.0
+offset_top = -120.0
+offset_right = -1614.0
+offset_bottom = -950.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(132, 122)
+theme_override_icons/icon = ExtResource("15_5q0nq")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cjqg0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vchkt")
+theme_override_styles/hover = SubResource("StyleBoxTexture_txyw0")
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("16_dgi5k")
+
+[node name="DialShadow" type="AnimatedSprite2D" parent="Circles/Dial"]
+show_behind_parent = true
+position = Vector2(23, 175)
+sprite_frames = SubResource("SpriteFrames_vc5cj")
+animation = &"white"
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -944)
+
+[node name="ActionMarker" type="Button" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 500.0
+offset_top = -900.0
+offset_right = 771.0
+offset_bottom = -651.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+pivot_offset = Vector2(134, 122)
+theme_override_icons/icon = ExtResource("15_5q0nq")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vxglm")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2f3dj")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yq6so")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_fv21b")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tel4y")
+script = ExtResource("28_2f3dj")
+
+[connection signal="mouse_entered" from="Circles/Dial/Marker" to="Circles/Dial/Marker" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Circles/Dial/Marker" to="Circles/Dial/Marker" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="ActionMarker" to="ActionMarker" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ActionMarker" to="ActionMarker" method="_on_mouse_exited"]

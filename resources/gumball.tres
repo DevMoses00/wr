@@ -1,0 +1,41 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://bgbcvgqq2ny4r"]
+
+[ext_resource type="Texture2D" uid="uid://cta5a3036jamj" path="res://art/intro/wr_gumballs/blue_gumball.png" id="1_pyxsl"]
+[ext_resource type="Texture2D" uid="uid://bqy8ulm0g7l0u" path="res://art/intro/wr_gumballs/pink_gumball.png" id="2_ficqx"]
+[ext_resource type="Texture2D" uid="uid://dtteks8l3vy11" path="res://art/intro/wr_gumballs/red_gumball.png" id="3_226u8"]
+[ext_resource type="Texture2D" uid="uid://uwumxnwikfrl" path="res://art/intro/wr_gumballs/yellow_gumball.png" id="4_s6dr6"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_pyxsl")
+}],
+"loop": true,
+"name": &"blue",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ficqx")
+}],
+"loop": true,
+"name": &"pink",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_226u8")
+}],
+"loop": true,
+"name": &"red",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_s6dr6")
+}],
+"loop": true,
+"name": &"yellow",
+"speed": 5.0
+}]
